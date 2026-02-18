@@ -1,6 +1,6 @@
 # MealWithLeastIngredients
 
-Prompt to Generate This code
+## Prompt to Generate This code
 
 you are a software developer. your task is to write a code in node.js that finds the meal with the least number of ingredients using TheMealDB API. use this API endpoint to fetch meals by first letter, iterate over letter a - z to get all meal, 
 
@@ -73,7 +73,7 @@ api response is something like this,
 
 
 
-Optimized Prompt - MealWithLeastIngredients
+## Optimized Prompt - MealWithLeastIngredients
 
 Objective
 
