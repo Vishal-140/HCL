@@ -69,3 +69,102 @@ api response is something like this,
 
 ]
 }
+
+
+
+
+Optimized Prompt - MealWithLeastIngredients
+
+Objective
+
+You are a senior Node.js developer.
+
+Write a clean, efficient, and production-ready Node.js script that finds the meal with the least number of valid ingredients using TheMealDB API.
+
+API Details
+
+Use the following endpoint to fetch meals by first letter:
+
+https://www.themealdb.com/api/json/v1/1/search.php?f={letter}
+
+Requirements:
+
+Iterate from a to z
+
+Fetch all meals
+
+Skip letters that return "meals": null
+
+Ingredient Counting Rules
+
+Each meal contains the following fields:
+
+strIngredient1 ... strIngredient20
+
+
+Count only ingredients that:
+
+Are not null
+
+Are not empty string ""
+
+Are not whitespace " "
+
+Are not undefined
+
+Ignore all empty ingredient fields.
+
+Optimization Requirements
+
+The solution must:
+
+Use axios
+
+Use async/await
+
+Handle API errors properly using try/catch
+
+Avoid duplicate meals (use idMeal if necessary)
+
+Be memory efficient
+
+Avoid unnecessary console logs
+
+Fetch letters sequentially (to prevent rate limits)
+
+Keep only the current minimum meal (do not store all meals)
+
+Expected Output
+
+At the end, print:
+
+Meal Name
+
+Meal ID
+
+Total Ingredient Count
+
+List of Ingredients
+
+Example Output
+Meal with least ingredients:
+Name: XYZ
+ID: 12345
+Ingredient Count: 3
+Ingredients: Salt, Oil, Egg
+
+Code Quality Guidelines
+
+Use clean and meaningful variable names
+
+Write modular functions where appropriate
+
+Add short and clear comments
+
+Follow Node.js best practices
+
+Edge Case Handling
+
+If no meals are found, print:
+
+No meals found.
